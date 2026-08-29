@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lucky Badsra | Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="bg-orb orb1"></div><div class="bg-orb orb2"></div>
+
+<header class="navbar">
+  <a class="brand" href="#home"><span class="brand-mark">LB</span><span>Lucky Badsra</span></a>
+  <button class="menu-btn" aria-label="Menu">☰</button>
+  <nav>
+    <a class="active" href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a class="resume-btn" href="assets/Lucky_Badsra_CV.pdf" download>Download CV ↓</a>
+</header>
+
+<main>
+<section id="home" class="hero container">
+  <div class="hero-copy">
+    <div class="badge">🎓 M.E. CSE Student</div>
+    <h1>Hi, I'm<br><span>Lucky Badsra</span></h1>
+    <h2>Building AI-powered solutions that solve real-world problems.</h2>
+    <p>M.E. Computer Science student passionate about AI, Machine Learning and Full Stack Development. I enjoy turning ideas into practical, impactful products.</p>
+    <div class="hero-actions">
+      <a class="primary-btn" href="#projects">View Projects <b>→</b></a>
+      <a class="secondary-btn" href="#contact">Contact Me ✉</a>
+    </div>
+    <div class="social-row">
+      <small>Connect with me</small>
+      <div>
+        <a href="https://github.com/badsralucky" target="_blank">◉ GitHub</a>
+        <a href="https://www.linkedin.com/in/lucky-badsra" target="_blank">in LinkedIn</a>
+        <a href="#contact">✉ Email</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="tech-scene">
+    <div class="node python">🐍<span>Python</span></div>
+    <div class="node pytorch">🔥<span>PyTorch</span></div>
+    <div class="node react">⚛<span>React</span></div>
+    <div class="node fastapi">ϟ<span>FastAPI</span></div>
+    <div class="node mongo">🍃<span>MongoDB</span></div>
+    <div class="laptop">
+      <div class="screen">
+        <div class="code"><i></i><i></i><i></i><i></i><i></i></div>
+        <div class="brain">◌</div>
+      </div>
+      <div class="keyboard"></div>
+    </div>
+    <div class="line l1"></div><div class="line l2"></div><div class="line l3"></div>
+  </div>
+</section>
+
+<section id="projects" class="projects-section">
+  <div class="container">
+    <div class="section-title"><span>FEATURED PROJECTS</span><h2>Things I've Built</h2><i></i></div>
+
+    <div class="projects-grid">
+      <article class="project-card">
+        <div class="project-image rag-img">
+          <div class="mini-sidebar"></div><div class="mini-window"><b>AI Research & Localization Studio</b><p>Ask anything about your documents</p><input placeholder="Ask a question..."></div>
+          <span class="corner-tag">RAG + LLM</span>
+        </div>
+        <h3>AI Research & Localization Studio</h3>
+        <p>RAG based application for document Q&A using Llama 3.2, FastAPI and vector search.</p>
+        <div class="chips"><span>🐍 Python</span><span>⚡ FastAPI</span><span>FAISS</span><span>Ollama</span><span>Llama</span></div>
+        <div class="card-links"><a href="https://github.com/badsralucky" target="_blank">◉ GitHub</a><span>Live Demo ↗</span></div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-image pneu-img real-project-shot">
+          <img src="assets/pneumonia-project.png" alt="Pneumonia Detection project screenshot">
+          <span class="corner-tag">DEEP LEARNING</span>
+        </div>
+        <h3>Explainable Pneumonia Detection</h3>
+        <p>ResNet18 based model to detect pneumonia from chest X-rays with Grad-CAM explainability.</p>
+        <div class="chips"><span>🔥 PyTorch</span><span>ResNet18</span><span>Streamlit</span><span>OpenCV</span></div>
+        <div class="card-links"><a href="https://github.com/badsralucky/Pneumonia-Detection--using-Xray" target="_blank">◉ GitHub</a><span>Live Demo ↗</span></div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-image plant-img">
+          <div class="chart-bars"><i></i><i></i><i></i><i></i><i></i></div><div class="pie"></div><div class="prediction">Prediction: Healthy</div>
+          <span class="corner-tag">ML ANALYTICS</span>
+        </div>
+        <h3>Indoor Plant Health Detection</h3>
+        <p>Predictive analytics project using CatBoost to classify plant health from environmental conditions.</p>
+        <div class="chips"><span>🐍 Python</span><span>CatBoost</span><span>Scikit-learn</span><span>Pandas</span></div>
+        <div class="card-links"><a href="https://github.com/badsralucky/Indoor_plant-_health-detection" target="_blank">◉ GitHub</a><span>Live Demo ↗</span></div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-image doctor-img">
+          <div class="booking"><h4>Book Appointment</h4><p>Trusted healthcare booking.</p><div class="booking-btns"><b>For Patients</b><b>For Doctors</b><b>Admin Panel</b></div></div>
+          <span class="corner-tag">FULL STACK</span>
+        </div>
+        <h3>Doctor Appointment Booking</h3>
+        <p>Full stack MERN application for booking appointments with role-based dashboards.</p>
+        <div class="chips"><span>🍃 MongoDB</span><span>Express.js</span><span>⚛ React</span><span>Node.js</span></div>
+        <div class="card-links"><a href="https://github.com/badsralucky/Doctor-Appointment-Booking" target="_blank">◉ GitHub</a><span>Live Demo ↗</span></div>
+      </article>
+    </div>
+
+    <div class="stats">
+      <div><b>⌘</b><strong>4+</strong><span>Major Projects</span></div>
+      <div><b>♧</b><strong>AI/ML</strong><span>Specialization</span></div>
+      <div><b>◫</b><strong>Full Stack</strong><span>Development</span></div>
+      <div><b>◆</b><strong>8.09</strong><span>CGPA</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="container info-section">
+  <div><span class="eyebrow">ABOUT ME</span><h2>Curious by nature.<br><em>Builder by choice.</em></h2></div>
+  <p>I enjoy connecting data, models, APIs and interfaces to create complete applications. My strongest interest is in practical AI systems that people can actually use.</p>
+</section>
+
+<section id="skills" class="container skills-section">
+  <span class="eyebrow">SKILLS</span><h2>My technical toolkit</h2>
+  <div class="skill-grid">
+    <div><h3>AI & ML</h3><p>Machine Learning · Deep Learning · RAG · LLMs · Computer Vision</p></div>
+    <div><h3>Languages</h3><p>Python · C++ · JavaScript · SQL</p></div>
+    <div><h3>Frameworks</h3><p>PyTorch · FastAPI · Scikit-learn · React · Node.js</p></div>
+    <div><h3>Tools</h3><p>FAISS · Ollama · Git · GitHub · MongoDB</p></div>
+  </div>
+</section>
+
+<section id="education" class="container education-section">
+  <span class="eyebrow">EDUCATION</span><h2>The journey so far</h2>
+  <div class="timeline">
+    <div><time>2025 — 2027</time><article><h3>M.E. Computer Science Engineering</h3><p>Thapar Institute of Engineering & Technology · CGPA 8.09</p></article></div>
+    <div><time>2020 — 2024</time><article><h3>B.Tech Computer Science Engineering</h3><p>Kurukshetra University · CGPA 8.54</p></article></div>
+  </div>
+</section>
+
+<section id="contact" class="container contact-section">
+  <div><span class="eyebrow">CONTACT</span><h2>Let's build something<br><em>useful together.</em></h2></div>
+  <div><p>Open to internships, collaborations and opportunities where I can learn fast and contribute seriously.</p><a class="mail-link" href="mailto:badsralucky@gmail.com">badsralucky@gmail.com ↗</a><div class="contact-social"><a href="https://www.linkedin.com/in/lucky-badsra" target="_blank">LinkedIn ↗</a><a href="https://github.com/badsralucky" target="_blank">GitHub ↗</a></div></div>
+</section>
+</main>
+
+<footer><span>© 2026 Lucky Badsra. All rights reserved.</span><span>Made with ♥ and lots of ☕</span></footer>
+<script src="script.js"></script>
+</body></html>
